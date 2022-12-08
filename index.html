@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Tiendita</title>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            
+                <svg class='logo' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
+                    <title>Academlo Logo</title>
+                    <g>
+                        <g>
+                            <path
+                            d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                            </path>
+                            <path
+                            d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            
+            <menu>
+                
+                <a href="#ancla_menu_home"><p id="change1" class="navbar-item">HOME</p></a><br><br>
+                <a href="#ancla_menu_productos"><p id="change2" class="navbar-item">PRODUCTOS</p></a>
+            </menu>
+            </div>
+            <div class="icons_contain">
+                <i class='bx bx-moon bx-sm' id="theme_btn"></i>
+                <div class="icon_bag" id="cart-btn">
+                    <i class='bx bxs-shopping-bag bx-sm'></i>
+                    <span class="bag_count" id="bag_count"></span>
+                </div>
+                <i class='bx bx-grid-alt bx-sm' id="btn_menu"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article id="loader" class="loader">
+            
+            <h2 class="txtkalan">Welcome...</h2>
+            
+        </article>
+        
+        <div class="cart-container hide" id="cart-container">
+            <div class="cart" id="cart">
+                <div class="cart-close" id="close-cart">
+                    <i class='bx bx-x bx-md'></i>
+                </div>
+                <h4>Carrito</h4>
+                <div id="cart-content">
+                       <img src="./assets/images/empty-cart.png" alt=""> 
+                       <div>
+                        <h2 class="title-empty">Your cart is empty</h2>
+                        <h3>You can add items to your cart by clicking on the
+                             "" button on the product page.</h3>
+                       </div>                
+                </div>
+                <!--<p class="total">Tu compra: $<span id="totalCart"></span></p>-->
+            </div>
+        </div>
+        <div class="menu hide" id="menu">
+            <div class="menu-close" id="close_menu">
+                <i class='bx bx-x bx-md'></i>
+            </div>
+            <center>
+                <a href="#ancla_menu_home"><p id="home" class="navbar-item">HOME</p></a><br><br>
+                <a href="#ancla_menu_productos"><p id="productos" class="navbar-item">PRODUCTOS</p></a>
+            </center>
+        </div>
+        <section class="featured_product" id="featured_product">
+            <div class="fp_discover" id="discover">
+                <img class="fp_img" id="ancla_menu_home" src="./assets/images/home.png" 
+                 alt="">
+            </div>
+            <div class="fp_description">
+                <h3>Producto Destacado<br><span >10% descuento</span></h3>
+                <P>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, 
+                with a modern design.</P>
+                <h5>$14.00</h5>
+                <div class="fp_btn">
+                    <a href="#discover"><div class="discover">Discover</div></a>
+                    <div class="add_cart" id="add_cart">AL CARRITO</div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <div class="products_contain" id="products_contain">
+           <!--aqui los productos
+           <article>
+            <button class="add" id="product.id"></button>
+            <img src=`${product.image}` alt="">
+            <div>
+                <h4>`$ ${product.price}`</h4>
+                <p>`Disponibilidad: ${product.quantity}`</p>
+                <h5>`${product.name}`</h5>
+            </div>
+           </article>-->
+           
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h5>Our information</h5>
+            <a href="#" target="_blank"><p>Montevideo-Uruguay <br> Calle Mariscala 1943 Bis.
+        </section>
+
+        <section>
+            <h5>About Us</h5>
+            <p>Support Center</p>
+            <p>Customer Support</p>
+            <p>Copy Right</p>
+            <br>
+        </section>
+        
+        <section>
+            <h5>Redes Sociales/ Contacto</h5>
+            <div class="footer_rrss">
+                <a href="#" target="_blank"><i class='bx bxl-whatsapp bx-md'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-instagram-alt bx-md'></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-facebook bx-md'></i></a>
+            </div>
+        </section>
+        
+    </footer>
+    <script src="./assets/js/base-products.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
